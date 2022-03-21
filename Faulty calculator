@@ -1,0 +1,28 @@
+'''
+Design a calculator which solves all the problems correctly except the following one:
+45*3=555
+56+9=77
+56/6=4
+Your program should take operator and operands as input and output the result
+'''
+operator = input("Enter the operator :")
+op1 = int(input("Enter first operand :"))
+op2 = int(input("Enter second operand :"))
+if(op1==45 and op2 ==3 and operator == '*'):
+    result = 555
+elif(op1==56 and op2 ==9 and operator == '+'):
+    result = 77
+elif(op1==56 and op2 ==6 and operator == '/'):
+    result = 4
+elif(operator == '*'):
+    result = op1*op2
+elif(operator == '-'):
+    result = op1-op2
+elif(operator == '+'):
+    result = op1+op2
+elif(operator == '/'):
+    result = op1/op2
+print(result)
+
+
+
