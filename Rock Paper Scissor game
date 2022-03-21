@@ -1,0 +1,41 @@
+import random
+print("*****Welcome to Rock, Paper,Scissr Game******")
+x = "y"
+player1_score =0
+player2_score =0
+while(x!="n"):
+    print("Rock = 1 \nPaper = 2\nScissor = 3")
+    player1 = int(input("Enter your choice :"))
+    player2 = random.randrange(1,4)
+    if(player1>3 or player1<1):
+        print("Invalid Choice")
+        continue
+    print("Player 1 :",player1)
+    print("Player 2 :",player2)
+    if(player1 ==1 and player2 == 2):
+        print("Player 2 win")
+        player2_score +=1
+    elif(player1 ==1 and player2 == 3):
+        print("Player 1 win")
+        player1_score +=1
+    elif(player1 ==2 and player2 == 1):
+        print("Player 1 win")
+        player1_score +=1
+    elif(player1 ==2 and player2 == 3):
+        print("Player 2 win")
+        player2_score +=1
+    elif(player1 ==3 and player2 == 2):
+        print("Player 1 win")
+        player1_score +=1
+    elif(player1 ==3 and player2 == 1):
+        print("Player 2 win")
+        player2_score +=1
+    elif((player1==1 and player2==1) or (player1==2 and player2==2) or (player1==3 and player2==3)):
+        print("Draw")
+    print("Player 1 Score =",player1_score,"\nPlayer 2 Score =",player2_score)
+    print("Do you want to play again ?")
+    print("Type y for yes or n for no :",end="")
+    x =input()
+print("GOODBYE!!!")
+    
+
