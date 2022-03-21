@@ -1,0 +1,6 @@
+#Create a dictionary in python to input name and output its meaning
+
+dict = {"Humanity":"understanding and kindness towards other people","Trouble":"(a situation that causes) a problem,difficulty or worry",
+         "Croud":"a large number of people in one place","Imaginary":"existing only in the mind; not real"}
+name = input("Enter a word to find its meaning :")
+print("Meaning :",dict[name])
