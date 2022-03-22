@@ -1,0 +1,19 @@
+#Create a program to print pattern between choice upward triangle and downward triangle
+print("1. Upward Triangle")
+print("2. Downward Triangle")
+choice = int(input("Enter your choice :"))
+lines = int(input("Enter the number of lines :"))
+if(choice == 1):
+    for i in range(lines):
+        for j in range(i+1):
+            print("*",end="")
+        print("\n")
+elif(choice == 2):
+    for i in range(lines):
+        for j in range(lines-i,0,-1):
+            print("*",end="")
+        print("\n")
+else:
+    print("Invalid Choice")
+
+
