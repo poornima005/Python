@@ -1,0 +1,29 @@
+'''
+Create a game for guessing number
+--in which no of guesses is 5
+--print number of guesses left
+--print how no of guesses user took to guess the no
+--game over
+'''
+print("******Welcome to guessing number game *****")
+import random
+#n = random.randrange(1,50)
+n=7
+play_again ="y"
+while(play_again!="n"):
+    for i in range (1,6):
+        number=int(input("Enter the guessing number :"))
+        if(number>n):
+                   print("You enter Greater number,Chances Left =",5-i)
+        elif(number<n):
+                   print("You entered Lesser number,Chances Left =",5-i)
+        elif(number==n):
+                   print("You Win guess the number!!!! \nChances taken to guess number =",i)
+                   break
+    print("You want to play again? Type y for yes!! and n for no!!")
+    play_again = input()
+
+print ("Game Over!!!!")
+    
+
+
