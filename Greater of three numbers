@@ -1,0 +1,26 @@
+a=int(input("Enter first no."))
+b=int(input("Enter second"))
+c= int(input("Enter third"))
+
+if(a==b==c):
+       print("All values are equal")
+elif(a==b and a>c):
+    print("a and b are equal and c is smaller")
+elif(b==c and b>a):
+    print("b and c are equal and a is smaller")
+elif(a==c and a>b ):
+    print("a and c are equal and b is smaller")
+
+elif(a>b and a>c):
+    print("a is greater")
+elif(b>a and b>c):
+    print("b is greater")
+else:
+    print("c is greater")
+if(a<b and a<c):
+    print("a is smaller")
+elif(b<a and b<c):
+    print("b is smaller")
+else:
+    print("c is smaller")
+
