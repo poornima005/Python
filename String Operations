@@ -1,0 +1,40 @@
+'''
+String :-
+1. Slicing
+2. Spliting
+3. Concatenation
+4. Multiplication
+'''
+#Slicing
+'''
+str1 = "Purnima"
+#x = str1[2:5]    #rni
+#x = str1[2:7]    #rnima
+#x = str1[2:30]   #rnima
+#x = str1[:5]      #Purni
+#x = str1[:30]     #Purnima
+x = str1[4:]       #ima
+print(x)
+'''
+
+#Spliting
+'''
+str1 = "Purnima Tanwar"
+x = str1.split("r")  #['Pu', 'nima Tanwa', '']
+#x = str1.split(" ")  #['Purnima', 'Tanwar']
+print(x)
+'''
+#Concatenation
+'''
+x = "Poornima"
+y = "Tanwar"
+#z = x+y    #PoornimaTanwar
+z = x+" "+y #Poornima Tanwar
+print(z) 
+'''
+
+# Multiplication
+x = "Poornima"
+y = 5
+z = x*y
+print(z)
