@@ -1,0 +1,18 @@
+#Write a class circle and find its area and circumference through class methods
+class Circle:
+    def __init__(self,radius):
+        self.radius = radius
+
+    def area(self):
+        return 3.14*self.radius*self.radius
+
+    def circumference(self):
+        return 2*3.14*self.radius
+
+
+Cir1 = Circle(2)
+print("Radius =",Cir1.area(),",Circumference =",Cir1.circumference())
+Cir2 = Circle(2.5)
+print("Radius =",Cir2.area(),",Circumference =",Cir2.circumference())
+
+
