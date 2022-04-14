@@ -1,0 +1,15 @@
+#Create a class cube and find its volume and surface area through class methods
+class Cube:
+    '''
+    def __init__(self):
+        pass
+    '''
+    def __init__(self,side):
+        self.side = side
+    def volume(self):
+        return self.side*self.side*self.side
+    def surface_area(self):
+        return 6*self.side*self.side
+
+C1 = Cube(6)
+print("Volume =",C1.volume(),",Surface Area =",C1.surface_area())
