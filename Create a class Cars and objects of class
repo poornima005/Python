@@ -1,0 +1,13 @@
+#Create a class Cars and make attributes brand name,model,Type
+
+class Cars:
+    def __init__(self,b_name,color,price):
+        self.b_name = b_name
+        self.color = color
+        self.price = price
+    
+car1 = Cars("Maruti","Red",50000)
+car1.type = "Sedan"
+car2 = Cars("Verna","Blue",250000)
+print(car1.__dict__)
+print(car2.__dict__)
