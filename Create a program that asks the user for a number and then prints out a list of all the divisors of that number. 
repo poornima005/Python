@@ -1,0 +1,7 @@
+# Create a program that asks the user for a number and then prints out a list of all the divisors of that number. 
+
+Number = int(input("Enter the number to find all the divisors of that number :"))
+for i in range(2,Number):
+    if(Number%i==0):
+        print(i)
+    
