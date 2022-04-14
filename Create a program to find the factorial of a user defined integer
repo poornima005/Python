@@ -1,0 +1,13 @@
+#Create a program to find the factorial of a user defined integer
+
+def fac(value):
+    if value==1:
+        return 1
+    else:
+        return value*fac(value-1)
+print(__name__)    
+if __name__ == "__main__":
+    Number = int(input("Enter the number :"))
+    factorial = fac(Number)
+    print(fac(Number))
+
