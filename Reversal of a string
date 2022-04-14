@@ -1,0 +1,20 @@
+#Reversal of a string using concatenation and using temporary string
+'''
+print("Reversal of a string using concatenation and using temporary string")
+str1 = "poornima"
+str2 = ""
+for i in range(len(str1)-1,-1,-1):
+    str2 = str2+str1[i]
+print("String after reversal: ",str2)
+'''
+
+#Reversal of a string using swapping
+
+print("Reversal of string using swapping")
+str1 = "poornima"
+j=0
+for i in range(len(str1)-1,(len(str1)//2)+1,-1):
+    str1[j],str1[i] = str1[i],str1[j]
+    j +=1
+print(str1)
+
