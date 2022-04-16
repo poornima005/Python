@@ -1,0 +1,73 @@
+
+# Decorator
+# We can copy function in a variable
+def func1():
+    print("This is function 1")
+
+func1()
+func2 = func1
+del func1
+func2()
+
+
+# We can return function in any function
+#Example1
+def func3(a):
+    if(a==1):
+        return print
+    if(a==0):
+        return sum
+
+result = func3(1)
+print(result)
+
+#Example2
+def func4():
+    return func2()  
+
+func4()
+
+
+#We can pass function as argument
+
+def func4(f):
+    f()
+    
+func4(func2)
+
+#How can we make decorators
+#Example1
+print("Decorator Executed")
+def dec1(f):               # return decexe
+    def decexe():
+        print("To be executed")
+        f()
+        print("Executed")
+    return decexe
+
+
+@dec1    
+def Myname():
+    print("Poornima Tanwar")
+    
+#Myname = dec1(Myname)
+Myname()
+
+
+#Example2
+def make_pretty(func):
+    def inner():
+        print("I got decorated")
+        func()
+    return inner
+
+
+def ordinary():
+    print("I am ordinary")
+    
+pretty  = make_pretty(ordinary)
+pretty()
+    
+
+
+
