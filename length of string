@@ -1,0 +1,9 @@
+# Print Length of a particular string
+
+string="Poornima Tanwar"
+length=len(string)
+
+print("Length of string : ",length)
+print("Length of string : "+str(length))
+print("Length of string : {}".format(length))
+
