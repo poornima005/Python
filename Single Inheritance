@@ -1,0 +1,26 @@
+class Employee:
+    no_of_leaves = 5
+    def __init__(self,name,salary):
+        self.name = name
+        self.salary = salary
+    def printDetails(self):
+        print("Name of Employee =",self.name,"Salary =",self.salary,"No of leaves = ",self.no_of_leaves)
+
+
+class Programmer(Employee):
+    no_of_holiday = 6
+    def __init__(self,name,salary,city):
+        super().__init__(name,salary)  #Employee.__init__(self,name,salary)
+        self.city = city
+
+        
+    def printDetails(self):
+        print("Name of Programmer =",self.name,"Salary =",self.salary,"No of holiday =",self.no_of_holiday,"City =",self.city)
+
+
+
+e1 = Employee("Karan",3000)
+e1.printDetails()
+p1 = Programmer("Poornima",4000,"Dewas")
+p1.printDetails()
+
