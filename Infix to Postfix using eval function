@@ -1,0 +1,2 @@
+expression = input("Enter the expression :")
+print(eval(expression))
