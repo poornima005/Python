@@ -1,0 +1,9 @@
+import factorial_of_a_number as fact
+n = int(input("Enter the value of n :"))
+r = int(input("Enter the value of r :"))
+permutation = fact.fac(n)/fact.fac(n-r)
+print("Permutation :",permutation)
+combination =fact.fac(n)/(fact.fac(n-r)*fact.fac(r))
+print("Combination :",combination)
+
+
